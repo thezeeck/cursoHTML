@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="Interfaz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=0">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link type="image/vnd.microsoft.icon" href="img/favicon.ico" rel="shortcut icon">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            Actualiza tu navegador
+        <![endif]-->
+        <header id="mainMenu">
+            <nav>
+                <h5>EmerDroid</h5>
+                <label><input type="text" id="mainSearch" placeholder="Buscar"></label>
+            </nav>
+        </header>
+        <section id="mainDashboard">
+            <ul id="iconSection" dropzone="move"></ul>
+        </section>
+        <footer id="mainTaskBar"></footer>
+        
+        <!-- Templates -->
+        <template id="gridItem">
+            <li draggable="true">
+                <img>
+                <span class="appName"></span>
+            </li>
+        </template>
+        <template id="ventana">
+            <div class="window">
+                <header class="windowBar"></header>
+                <section class="windowContent"></section>
+            </div>
+        </template>
+        <template id="barTemplate">
+            <img>
+            <strong></strong>
+            <button class="min"> - </button>
+            <button class="close"> x </button>
+        </template>
+        
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
